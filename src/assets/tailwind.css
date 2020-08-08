@@ -1,0 +1,64 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+};
+
+
+.space-left > *{
+    margin-left: 10px;
+}
+
+.space-bottom > *{
+    margin-bottom: 10px;
+}
+
+.scrollable {
+    flex: 1 0 auto;
+    overflow: auto;
+}
+
+.nav {
+    @apply flex justify-center py-4 bg-blue-900 mb-4;
+}
+.nav-buttons-container {
+    display: flex;
+    gap:30px;
+}
+
+.nav-button {
+    @apply py-1 px-4 rounded-full text-base cursor-pointer bg-gray-400 text-gray-200 ;
+}
+
+.list-container {
+    @apply  border-gray-800 h-full shadow-lg flex-col scrollable w-5/6 mx-auto mt-24 rounded;
+}
+.fruit-item {
+    @apply py-3 flex items-center justify-between px-4 m-4 border-b-2 cursor-pointer ;
+}
+
+.fruit-item:hover {
+    @apply bg-gray-200;
+}
+li {
+    list-style: none;
+}
+.back-button {
+    @apply rounded-full border text-center w-20 bg-gray-200 text-blue-500 cursor-pointer ;
+}
+.back-button:hover {
+    @apply bg-gray-300;
+}
+.fruit-image {
+    @apply h-20 w-20 border rounded mr-6;
+    
+}
